@@ -1,1 +1,2 @@
-// bcrypt is the library used for hashing
+console.log("Authentication");
+
