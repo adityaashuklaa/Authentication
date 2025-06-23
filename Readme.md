@@ -16,3 +16,15 @@ JWTs are being stored in the localstorage of the broswer, while cookies are bein
 ## Why not local storage?
 - Cause we can't do this in next.js application.
 - Servers gives back a set-cookie attribute, which is being stored by the browser and is being subsequently sent in every request to the server. 
+
+## Types of cookies
+- Persistent - Stay even if you close the window
+- Session - Go away after the window closes
+- Secure - Sent only over secure, encrypted connections (HTTPS)
+
+## Properties of Cookies
+- HttpOnly - Can not be accessed by client side scripts
+- SameSite - Ensures cookies are not send on cross origin requests.
+1. Strict 
+2. Lax - Only Get request and on top level navigation
+2. None
