@@ -27,6 +27,7 @@ JWTs are being stored in the localstorage of the broswer, while cookies are bein
 - SameSite - Ensures cookies are not send on cross origin requests.
     1. Strict 
     2. Lax - Only Get request and on top level navigation
+- Top Level Navigation - A different website pointed towards your website.
     3. None (CSRFs attacks will happen)
 - By default Lax is get selected.
 - In next.js website cookies can be sent from both ends, frontend as well as backend.
