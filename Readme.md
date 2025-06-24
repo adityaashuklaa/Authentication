@@ -28,6 +28,7 @@ JWTs are being stored in the localstorage of the broswer, while cookies are bein
     1. Strict 
     2. Lax - Only Get request and on top level navigation
     3. None (CSRFs attacks will happen)
+- By default Lax is get selected.
 
 ## CSRF(Cross Site Requesr Forgery) Attacks
 - Basically a different site forging to update the details of the users, by sending post requests.
