@@ -25,6 +25,12 @@ JWTs are being stored in the localstorage of the broswer, while cookies are bein
 ## Properties of Cookies
 - HttpOnly - Can not be accessed by client side scripts
 - SameSite - Ensures cookies are not send on cross origin requests.
-1. Strict 
-2. Lax - Only Get request and on top level navigation
-2. None
+    1. Strict 
+    2. Lax - Only Get request and on top level navigation
+    3. None (CSRFs attacks will happen)
+
+## CSRF(Cross Site Requesr Forgery) Attacks
+- Basically a different site forging to update the details of the users, by sending post requests.
+- That's why you have to be very strict while sending cookies.
+- Restrict Domains
+- SameSite (This was introduced because of CSRFs)
