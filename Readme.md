@@ -8,7 +8,7 @@
 JWTs are being stored in the localstorage of the broswer, while cookies are being stored in the cookies of the browser.
 
 ## Why cookies are useful: 
-- Session Management 
+- Session Management   
 - Personalization 
 - Tracking
 - Security
@@ -37,3 +37,5 @@ JWTs are being stored in the localstorage of the broswer, while cookies are bein
 - That's why you have to be very strict while sending cookies.
 - Restrict Domains
 - SameSite (This was introduced because of CSRFs)
+
+## NextAuth
