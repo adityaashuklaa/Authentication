@@ -43,3 +43,8 @@ JWTs are being stored in the localstorage of the broswer, while cookies are bein
 - To handle all the routes being handled by a auth route handler, this is the syntax used. 
 api/auth/[...authRoutes] or api/auth/[...nextauth]
 - NextAuth gives you Auth Providers.
+
+## Providers
+- OAuth - [Login with Google, facebook, github]
+- Email - [Login through email] after clicking the link being provided to the gmail account. 
+- Crendentials - Do whatever you want. 
