@@ -63,3 +63,6 @@ export function POST(){
         message: "Aditya is POSTing here."
     })
 }
+
+- NextAuth is a session management library, given the details of the user it create cookies for you. That's why NextAuth never gives you signup page, let's you do that.
+- It only create cookies and JWTs and send them to the browser.
