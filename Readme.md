@@ -48,3 +48,18 @@ api/auth/[...authRoutes] or api/auth/[...nextauth]
 - OAuth - [Login with Google, facebook, github]
 - Email - [Login through email] after clicking the link being provided to the gmail account. 
 - Crendentials - Do whatever you want. 
+
+import { NextRequest, NextResponse } from "next/server";
+
+export function GET(req:NextRequest, arg: any){
+    console.log(arg.params.authRoutes);
+    
+    return NextResponse .json({
+        message: "Aditya is here."
+    })
+}
+export function POST(){
+    return NextResponse .json({
+        message: "Aditya is POSTing here."
+    })
+}
