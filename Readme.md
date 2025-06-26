@@ -39,3 +39,4 @@ JWTs are being stored in the localstorage of the broswer, while cookies are bein
 - SameSite (This was introduced because of CSRFs)
 
 ## NextAuth
+- The very first request sends the cookies in the header. 
