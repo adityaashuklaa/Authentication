@@ -1,9 +1,9 @@
+import { Appbar } from "@/components/Appbar";
+
 export default function Home() {
   return (
    <>
-      <div className="heading">
-        <h1>Starting With Authentication</h1>
-      </div>
+      <Appbar />
    </>
   );
 }

@@ -66,3 +66,36 @@ export function POST(){
 
 - NextAuth is a session management library, given the details of the user it create cookies for you. That's why NextAuth never gives you signup page, let's you do that.
 - It only create cookies and JWTs and send them to the browser.
+
+providers: [
+    CredentialsProvider({
+        name: "Email",
+        credentials: {
+            username: {label: 'email', type: 'text', placeholder: 'Enter your email.'},
+            password: {label: 'password', type: 'password', placeholder: 'Enter your password.'},
+        },
+        async authorize(credentials:any){
+            const username = credentials.username;
+            const password = credentials.password;
+            const user = prisma.user.findOne({
+                where: {
+                    email: username,
+                    password: password
+                }
+            })
+            if(!user){
+                return null;
+            }
+            return {
+                id: user.id,
+                email: user.email
+            }
+        }
+    })
+]
+
+- Result : {
+  csrfToken: 'e6becab99e7bbc4e3cea73b6f5f50f8281b4a6cc7339028a6034179d36543a7e',
+  username: 'aditya@gmail.com',
+  password: '12345678'
+}
