@@ -40,3 +40,5 @@ JWTs are being stored in the localstorage of the broswer, while cookies are bein
 
 ## NextAuth
 - The very first request sends the cookies in the header. 
+- To handle all the routes being handled by a auth route handler, this is the syntax used. 
+api/auth/[...authRoutes]
