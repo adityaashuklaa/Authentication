@@ -18,7 +18,9 @@ const handler = NextAuth({
                 }
             }
         })
-    ]
+    ],
+    // secret: "process.env.NEXTAUTH_SECRET"  Never hardcode it like this, not a good approach.
+    secret: process.env.NEXTAUTH_SECRET
 })
 
 export { handler as GET, handler as POST }
