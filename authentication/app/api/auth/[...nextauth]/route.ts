@@ -10,7 +10,7 @@ const handler = NextAuth({
             },
             async authorize(credentials:any){
                 // Validation Logic
-                console.log(credentials);
+                console.log(credentials);   
                 return {
                     id: "user1",
                     name: "Aditya Shukla",
