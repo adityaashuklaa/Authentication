@@ -7,7 +7,7 @@
             {/* <button onClick={() => {
                 router.push("api/auth/signin")
             }}>Signin</button> */}
-            <button onClick={() => {
+            <button onClick={() => {    
                 signIn();
             }}>Signin</button>
             <button onClick={() => {
