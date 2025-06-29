@@ -6,7 +6,7 @@
         return <div>
             {/* <button onClick={() => {
                 router.push("api/auth/signin")
-            }}>Signin</button> */}
+            }}>Signin</button> */}   
             <button onClick={() => {    
                 signIn();
             }}>Signin</button>
