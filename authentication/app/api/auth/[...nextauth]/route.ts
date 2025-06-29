@@ -8,7 +8,7 @@ const handler = NextAuth({
                 username: {label: 'email', type: 'text', placeholder: 'Enter your email.'},
                 password: {label: 'password', type: 'password', placeholder: 'Enter your password.'},
             },
-            async authorize(credentials:any){
+            async authorize(credentials:any){   
                 // Validation Logic
                 console.log(credentials);   
                 return {
