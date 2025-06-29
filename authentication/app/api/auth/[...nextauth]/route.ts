@@ -12,7 +12,7 @@ const handler = NextAuth({
                 // Validation Logic
                 console.log(credentials);   
                 return {
-                    id: "user1",
+                    id: "user1",   
                     name: "Aditya Shukla",
                     email: "aditya@gmail.com"
                 }
