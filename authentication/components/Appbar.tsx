@@ -10,7 +10,7 @@
             <button onClick={() => {    
                 signIn();
             }}>Signin</button>
-            <button onClick={() => {
+            <button onClick={() => {   
                 signOut();
             }}>Logout</button>
         </div>
