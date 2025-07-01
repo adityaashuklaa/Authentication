@@ -3,7 +3,7 @@
     import { signIn, signOut } from "next-auth/react"
     export const Appbar = () => {
         const router = useRouter();   
-        return <div>
+        return <div>  
             {/* <button onClick={() => {
                 router.push("api/auth/signin")
             }}>Signin</button> */}   
