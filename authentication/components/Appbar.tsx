@@ -9,7 +9,7 @@
             }}>Signin</button> */}   
             <button onClick={() => {    
                 signIn();
-            }}>Signin</button>
+            }}>Signin</button>   
             <button onClick={() => {   
                 signOut();
             }}>Logout</button>
